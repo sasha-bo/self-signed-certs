@@ -1,6 +1,10 @@
 # self-signed-certs
 
-PHP library for creating self-signed certificates.
+PHP library for creating self-signed certificates. No dependencies.
+
+### Installation
+
+`composer require sasha-bo/self-signed-certs`
 
 ## Usage
 
