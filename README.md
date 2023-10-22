@@ -4,7 +4,7 @@ PHP library for creating self-signed certificates. No dependencies.
 
 ### Installation
 
-`composer require sasha-bo/self-signed-certs`
+`composer require sashabo/self-signed-certs`
 
 ## Usage
 

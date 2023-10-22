@@ -1,5 +1,5 @@
 {
-    "name": "sasha-bo/self-signed-certs",
+    "name": "sashabo/self-signed-certs",
     "version": "1.0",
     "description": "Creating self-signed SSL certificates for your domain.",
     "type": "library",
@@ -15,6 +15,7 @@
         }
     ],
     "require": {
-        "php": ">=8.1"
+        "php": ">=8.1",
+        "ext-openssl": "*"
     }
 }

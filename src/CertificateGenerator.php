@@ -19,7 +19,6 @@ class CertificateGenerator
     protected ?string $organizationName = null;
     protected ?string $organizationalUnitName = null;
 
-    #[NoReturn]
     public function generate(): CertificatePair
     {
         // configs
@@ -36,7 +35,7 @@ class CertificateGenerator
             throw new Exception('openssl_csr_new returned false');
         }
         // signing
-        $certificate = openssl_csr_sign($request, null, $privateKey, $this->expireDays, $config, 0 );
+        $certificate = openssl_csr_sign($request, null, $privateKey, $this->expireDays, $config, 0);
         if ($certificate === false) {
             throw new Exception('openssl_csr_sign returned false');
         }
